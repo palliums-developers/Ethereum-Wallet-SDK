@@ -4,7 +4,7 @@ const Portis = require('@portis/web3');
 const Web3 = require('web3');
 const $ = require('jquery');
 require('bootstrap');
-const Torus = require('@toruslabs/torus-embed').default;
+const Torus = require('@toruslabs/torus-embed');
 const i18next = require('i18next').default;
 
 const modal = require('../static/asset/modal');
