@@ -22,9 +22,7 @@ const getDefaultAddress = () => {
     return '';
 };
 
-const getNetVersion = () => {
-    return 1;
-};
+const getNetVersion = () => 1;
 
 // Create new web3 and set default account
 const defaultEnableCallback = (err, res) => {
@@ -72,7 +70,7 @@ const initEngine = () => {
     eng.isDappSdk = true;
     eng.dappSdk = { version };
 
-    eng.enable = async (cb = () => {}) => {
+    eng.enable = async (cb = () => { }) => {
         const p = new Promise((resolve, reject) => {
             const rpcData = {
                 method: 'eth_requestAccounts',
@@ -96,7 +94,7 @@ const initEngine = () => {
      * Log out from wallet connect
      * Return Promise
      */
-    eng.logout = async (cb = () => {}) => {
+    eng.logout = async (cb = () => { }) => {
         const p = new Promise((resolve, reject) => {
             if (!walletConnector.connected) {
                 const err = new Error('User does not log in with wallet connect.');

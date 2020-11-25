@@ -1,4 +1,4 @@
-const WalletConnectQRCodeModal = require('@walletconnect/qrcode-modal').default;
+const WalletConnectQRCodeModal = require('@walletconnect/qrcode-modal');
 const TrezorConnect = require('trezor-connect').default;
 const Portis = require('@portis/web3');
 const Web3 = require('web3');
@@ -219,8 +219,7 @@ const addWalletBtnListener = (walletConnector, end, onLoginSuccess) => {
             end(result.payload);
         }
     });
-    $('#use-mobile-btn').click(() => {
-
+    $('#use-mobile-btn').click(async () => {
         if (window.isMobile) { // Mobile
             myAlert.wcUnsupport();
         } else { // PC/MAC Broswer
@@ -235,8 +234,7 @@ const addWalletBtnListener = (walletConnector, end, onLoginSuccess) => {
                 // get uri for QR Code modal
                 const { uri } = walletConnector;
                 // display QR Code modal
-                WalletConnectQRCodeModal.open(uri, () => {
-                });
+                WalletConnectQRCodeModal.open(uri);
             });
 
             // Subscribe to connection events
@@ -261,7 +259,7 @@ const addWalletBtnListener = (walletConnector, end, onLoginSuccess) => {
 };
 
 module.exports = {
-    showLoginQrcodeWithString: (walletConnector, end, onLoginSuccess = () => {}) => {
+    showLoginQrcodeWithString: (walletConnector, end, onLoginSuccess = () => { }) => {
         // If modal not exist, setup the modal and append it
 
         const resources = {

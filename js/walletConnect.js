@@ -1,4 +1,4 @@
-import WalletConnect from '@walletconnect/browser';
+import WalletConnect from '@walletconnect/client';
 
 const setupWalletConnector = (walletConnector) => {
     walletConnector.on('session_update', (error, payload) => {
