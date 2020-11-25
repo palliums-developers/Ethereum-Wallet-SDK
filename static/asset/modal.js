@@ -113,25 +113,25 @@ const modal = `
                                 <h6 data-i18n="chooseWallet" class="h6 mb-4 mt-1 font-weight-light" id="modal-intro"></h6>
                             </div>
                             <button id="use-metamask-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/2HV78Pn.png">
-                            </button>
-                            <button id="use-dapper-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/GEM6grZ.png">
-                            </button>
-                            <button id="use-torus-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/1EL9dlf.png">
-                            </button>
-                            <button id="use-portis-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/3oXNS7K.png">
-                            </button>
-                            <button id="use-ledger-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/vlxG8lN.png">
+                                <img class="my-2 wallet-button-img" src="./image/metamask.png">
                             </button>
                             <button id="use-trezor-btn" class="btn btn-light btn-block">
-                                <img class="my-2 wallet-button-img" src="https://i.imgur.com/uBELJuu.png">
+                                <img class="my-2 wallet-button-img" src="./image/trezor.png">
                             </button>
                             <button id="use-mobile-btn" class="btn btn-light btn-block">
-                                <h4 class="my-2 text-primary">Connect Mobile Wallet</h4>
+                                <img class="my-2 wallet-button-img" src="./image/walletconnect.png">
+                            </button>
+                            <button id="use-dapper-btn" class="btn btn-light btn-block">
+                                <img class="my-2 wallet-button-img" src="./image/dapper.png">
+                            </button>
+                            <button id="use-torus-btn" class="btn btn-light btn-block">
+                                <img class="my-2 wallet-button-img" src="./image/torus.png">
+                            </button>
+                            <button id="use-portis-btn" class="btn btn-light btn-block">
+                                <img class="my-2 wallet-button-img" src="./image/portis.png">
+                            </button>
+                            <button id="use-ledger-btn" class="btn btn-light btn-block">
+                                <img class="my-2 wallet-button-img" src="./image/ledger.png">
                             </button>
                             <div id="more-options" class="text-center" style="display: none;">
                                 <h6 class="my-3 text-secondary">More options on PC/Mac</h6>

@@ -17,6 +17,9 @@ module.exports = {
     },
     mode: 'production',
     optimization: {
-        minimizer: [new TerserPlugin()], // for ES6
+        minimize: true,
+        minimizer: [new TerserPlugin({
+            parallel: 8,
+        })], // for ES6
     },
 };

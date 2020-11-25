@@ -17,6 +17,7 @@ function start(route) {
 	})
 
 	app.use('/static', express.static(path.join(__dirname, '../static')));
+	app.use('/image', express.static(path.join(__dirname, 'image')));
 
 	var server = app.listen(8080);
 }
