@@ -101,7 +101,7 @@ const modal = `
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header align-items-center">
-                        <img id="dapp-icon" class="mr-3" style="max-width: 20px;" src="https://images.cointelegraph.com/images/240_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8wZWNiY2NiNDI0NWQ2MThmMGI0MzUxNGQ0Y2QxZTg1NS5wbmc=.png">
+                        <img id="dapp-icon" class="mr-3" style="max-width: 20px;" src="./image/favicon2.png">
                         <h4 data-i18n="signIn" id="dapp-title" class="h4 mb-0">Sign in</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>

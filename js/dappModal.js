@@ -287,7 +287,8 @@ module.exports = {
                 $(object).text(translation);
             });
 
-            const iconSrc = `https://www.google.com/s2/favicons?domain=${window.location.href}`;
+            // const iconSrc = `https://www.google.com/s2/favicons?domain=${window.location.href}`;
+            const iconSrc = `./image/favicons.png`;
             $('#dapp-icon').attr('src', iconSrc);
 
             // Add dismiss handler
